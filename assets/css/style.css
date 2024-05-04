@@ -550,6 +550,8 @@ main {
 
 .service-icon-box { margin-bottom: 10px; }
 
+.service-icon-box
+
 .service-icon-box img { margin: auto; }
 
 .service-content-box { text-align: center; }
@@ -1411,6 +1413,11 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-bottom: 0;
     margin-top: 5px;
   }
+
+  .service-icon-box ion-icon {
+    color: var(--orange-yellow-crayola);
+  }
+
 
   .service-content-box { text-align: left; }
 
