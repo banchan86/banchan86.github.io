@@ -212,6 +212,10 @@ article {
 
 article { display: none; }
 
+ion-icon {
+  color:var(--orange-yellow-crayola);
+}
+
 article.active {
   display: block;
   animation: fade 0.5s ease backwards;
