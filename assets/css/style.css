@@ -157,7 +157,10 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--smoky-black); }
+body { 
+  background: var(--smoky-black);
+  margin-top: 20px
+}
 
 
 
@@ -1334,7 +1337,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   main {
     margin-top: 60px;
-    padding-top: 20px;
     margin-bottom: 100px;
   }
 
