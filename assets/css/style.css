@@ -1403,7 +1403,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * #NAVBAR
    */
 
-  .navbar { border-radius: 20px 20px 0 0; }
+  .navbar { border-radius: 0 0 0 0; }
 
   .navbar-list { gap: 20px; }
 
