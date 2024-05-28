@@ -1254,7 +1254,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * Navbar text size
    */
 
-   .navbar-link { --fs-8: 12px; }
+   .navbar-link { --fs-8: 11px; }
 
 }
 
