@@ -159,11 +159,8 @@ html { font-family: var(--ff-poppins); }
 
 body { 
   background: var(--smoky-black);
-  padding-top: 20px
+  padding-top: 10px
 }
-
-
-
 
 
 /*-----------------------------------*\
@@ -1246,6 +1243,21 @@ textarea.form-input::-webkit-resizer { display: none; }
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
+
+/**
+ * responsive smaller than 449px screen
+ */
+
+ @media (max-width: 450px) {
+
+  /**
+   * Navbar text size
+   */
+
+   .navbar-link { --fs-8: 14px; }
+
+}
+
 
 /**
  * responsive larger than 450px screen
