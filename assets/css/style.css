@@ -1248,13 +1248,13 @@ textarea.form-input::-webkit-resizer { display: none; }
  * responsive larger than 300px screen
  */
 
- @media (min-width: 300px) {
+ @media (min-width: 330px) {
 
   /**
    * Navbar text size
    */
 
-   .navbar-link { --fs-8: 11px; }
+   .navbar-link { --fs-8: 12px; }
 
 }
 
