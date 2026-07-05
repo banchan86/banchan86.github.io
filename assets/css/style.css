@@ -994,6 +994,8 @@ main {
   object-fit: cover;
 }
 
+.project-modal .modal-content { align-self: center; }
+
 .project-img {
   position: relative;
   width: 100%;
@@ -1679,6 +1681,25 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * PORTFOLIO
    */
+
+  /* project modal: image left, text right */
+  .project-modal {
+    align-items: stretch;
+    max-width: 800px;
+  }
+
+  .project-modal .project-modal-img-box {
+    flex-shrink: 0;
+    width: 45%;
+    margin-bottom: 0;
+  }
+
+  .project-modal .project-modal-img-box img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .project-modal .modal-content { flex-grow: 1; }
 
   .article-title { padding-bottom: 20px; }
 
