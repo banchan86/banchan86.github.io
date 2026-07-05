@@ -995,62 +995,106 @@
           <ul class="project-list">
 
             <li class="project-item  active" data-filter-item data-category="behaviour setups">
-              <a href="#">
+              <button class="project-card-btn" data-project-item>
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/videos/observatory_neutral.webp" alt="Observatory" loading="lazy">
+                  <img src="./assets/videos/observatory_neutral.webp" alt="Observatory" loading="lazy" data-project-img>
                 </figure>
 
-                <h3 class="project-title">Observatory - multi-dimensional characterization of mice behavior</h3>
+                <h3 class="project-title" data-project-title>Observatory - multi-dimensional characterization of mice behavior</h3>
 
                 <p class="project-category">Behaviour Setups</p>
 
-              </a>
+                <div class="project-detail" data-project-text>
+                  <p>
+                    Add a description of the Observatory project here.
+                  </p>
+                </div>
+
+              </button>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="data analysis">
-              <a href="#">
+              <button class="project-card-btn" data-project-item>
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/videos/deeplabcut_face.webp" alt="Classification of Facial Features to Odorants" loading="lazy">
+                  <img src="./assets/videos/deeplabcut_face.webp" alt="Classification of Facial Features to Odorants" loading="lazy" data-project-img>
                 </figure>
 
-                <h3 class="project-title">Classification of Facial Features to Odorants</h3>
+                <h3 class="project-title" data-project-title>Classification of Facial Features to Odorants</h3>
 
                 <p class="project-category">Data Analysis</p>
 
-              </a>
+                <div class="project-detail" data-project-text>
+                  <p>
+                    Add a description of the facial features classification project here.
+                  </p>
+                </div>
+
+              </button>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="data analysis">
-              <a href="#">
+              <button class="project-card-btn" data-project-item>
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/videos/moseq_video.webp" alt="fundo" loading="lazy">
+                  <img src="./assets/videos/moseq_video.webp" alt="Extraction of behavioral motifs with Moseq" loading="lazy" data-project-img>
                 </figure>
 
-                <h3 class="project-title">Extraction of behavioral motifs with Moseq</h3>
+                <h3 class="project-title" data-project-title>Extraction of behavioral motifs with Moseq</h3>
 
                 <p class="project-category">Data Analysis</p>
 
-              </a>
+                <div class="project-detail" data-project-text>
+                  <p>
+                    Add a description of the Moseq behavioral motifs project here.
+                  </p>
+                </div>
+
+              </button>
             </li>
 
           </ul>
 
         </section>
+
+        <div class="modal-container" data-project-modal-container>
+
+          <div class="overlay" data-project-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-project-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-content">
+
+              <figure class="project-modal-img-box">
+                <img src="" alt="" data-project-modal-img>
+              </figure>
+
+              <h4 class="h3 modal-title" data-project-modal-title></h4>
+
+              <div data-project-modal-text></div>
+
+            </div>
+
+          </section>
+
+        </div>
 
       </article>
 

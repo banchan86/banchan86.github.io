@@ -55,6 +55,45 @@ overlay.addEventListener("click", testimonialsModalFunc);
 
 
 
+// project modal variables
+const projectItems = document.querySelectorAll("[data-project-item]");
+const projectModalContainer = document.querySelector("[data-project-modal-container]");
+const projectModalCloseBtn = document.querySelector("[data-project-modal-close-btn]");
+const projectOverlay = document.querySelector("[data-project-overlay]");
+
+const projectModalImg = document.querySelector("[data-project-modal-img]");
+const projectModalTitle = document.querySelector("[data-project-modal-title]");
+const projectModalText = document.querySelector("[data-project-modal-text]");
+
+// project modal toggle function
+const projectModalFunc = function () {
+  projectModalContainer.classList.toggle("active");
+  projectOverlay.classList.toggle("active");
+}
+
+// add click event to all project items
+for (let i = 0; i < projectItems.length; i++) {
+
+  projectItems[i].addEventListener("click", function () {
+
+    const img = this.querySelector("[data-project-img]");
+    projectModalImg.src = img.src;
+    projectModalImg.alt = img.alt;
+    projectModalTitle.innerHTML = this.querySelector("[data-project-title]").innerHTML;
+    projectModalText.innerHTML = this.querySelector("[data-project-text]").innerHTML;
+
+    projectModalFunc();
+
+  });
+
+}
+
+// add click event to project modal close button and overlay
+projectModalCloseBtn.addEventListener("click", projectModalFunc);
+projectOverlay.addEventListener("click", projectModalFunc);
+
+
+
 // custom select variables
 const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
